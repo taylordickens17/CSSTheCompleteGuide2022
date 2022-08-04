@@ -1,9 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 #product-overview {
-    background: #ff1b68;
+    background: url("freedom.jpg");
+    width: 100%;
+    height: 528px;
+    padding: 10px;
 }
 
 .section-title {
@@ -17,4 +25,84 @@ body {
 
 /* h1 {
     font-family: sans-serif;
+} */
+
+.main-header {
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 100px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    /* mixes both inline and block values. Will be inline but have a block style */
+    display: inline-block;
+    /* visibility: hidden; will take away their visibility but won't get rid of their block styling
+    display: none; will take away their visibility and will get rid of their block styling */
+    margin: 0 16px;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    text-align: center;
+    font-weight: bold;
+    padding: 3px;
+}
+
+/* After and before are literally talking about "before" or "after" the elements */
+/* .main-nav__item a::after {
+    content: " (Link)";
+    color: red;
+} */
+
+/* pseudo classes defines the style of a special state of an element where as element defines the style of a specific part of an element */
+.main-nav__item a:hover, 
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover, .main-nav__item--cta a:active {
+    color: #ff1b68;
+    background: white;
+    border: none;
+}
+
+
+/* Grabs the first letter in your element and gives it designs */
+/* p::first-letter {
+    color: red;
+    font-size: 20px;
 } */
