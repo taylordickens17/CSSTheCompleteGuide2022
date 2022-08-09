@@ -15,7 +15,7 @@ Udemy Course: [CSS - The Complete Guide 2022 (incl. Flexbox, Grid, & Sass)](http
 - [x] Section 3: Diving Deeper into CSS
 - [x] Section 4: More on Selectors & CSS Features
 - [x] Section 5: Practicing the Basics
-- [] Section 6: Positioning Elements with CSS
+- [x] Section 6: Positioning Elements with CSS
 - [] Section 7: Understanding Background Images & Images
 - [] Section 8: Sizes & Units
 - [] Section 9: Working with JavaScript & CSS
