@@ -114,17 +114,3 @@
 /* h1 {
     font-family: sans-serif;
 } */
-
-/* 
-Moving Elements: 
-    - Top
-    - Left
-    - Right
-    - Bottom
-
-Positioning context:
-    - The viewport for fixed;
-    - Another element for absolute;
-    - The element itself for relative;
-    - The viewport and another element for sticky;
-*/
