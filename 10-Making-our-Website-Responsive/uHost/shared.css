@@ -183,7 +183,7 @@ body {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
 }
 
@@ -197,7 +197,7 @@ main {
     display: none;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
@@ -256,10 +256,7 @@ main {
 }
 
 .main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 122px);
-    vertical-align: middle;
+    display: none;
 }
 
 .main-nav__items {
@@ -296,12 +293,25 @@ main {
 }
 
 .main-nav__item--cta a:hover,
-.main-nav__item--cta a:active
+.main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
     color: #ff1b68;
     background: white;
     border: none;
+}
+
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 44px);
+        vertical-align: middle;
+    }
 }
 
 .main-footer {
@@ -318,8 +328,8 @@ main {
 }
 
 .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+    display: block;
+    margin: 1rem 0;
 }
 
 .main-footer__link a {
@@ -330,76 +340,6 @@ main {
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: #ccc;
-}
-
-.button {
-    background: #0e4f1f;
-    color: white;
-    font: inherit;
-    border: 1.5px solid #0e4f1f;
-    padding: 0.5rem;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.button:hover,
-.button:active {
-    background: white;
-    color: #0e4f1f;
-}
-
-.button:focus {
-    outline: none;
-}
-
-.modal {
-    position: fixed;
-    display: none;
-    z-index: 200;
-    top: 20%;
-    left: 30%;
-    width: 40%;
-    background: white;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.modal__title {
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-
-.modal__actions {
-    text-align: center;
-}
-
-.modal__action {
-    border: 1px solid #0e4f1f;
-    background: #0e4f1f;
-    text-decoration: none;
-    color: white;
-    font: inherit;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-}
-
-.modal__action:hover,
-.modal__action:active {
-    background: #2ddf5c;
-    border-color: #2ddf5c;
-}
-
-.modal__action--negative {
-    background: red;
-    border-color: red;
-}
-
-.modal__action--negative:hover,
-.modal__action--negative:active {
-    background: #ff5454;
-    border-color: #ff5454;
 }
 
 .mobile-nav {
@@ -430,6 +370,34 @@ main {
     font-size: 1.5rem;
 }
 
+.button {
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+.button:focus {
+    outline: none;
+}
+
 .open {
     display: block !important;
+}
+
+@media (min-width: 40rem) {
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 1rem;
+    }
 }
