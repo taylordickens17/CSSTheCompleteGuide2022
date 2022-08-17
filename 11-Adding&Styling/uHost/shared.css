@@ -349,6 +349,14 @@ body {
     outline: none;
 }
 
+/* Making the button disabled until javascript intervenes and you fill out the form! */
+/* .button[disabled] {
+    cursor: not-allowed;
+    border: #a1a1a1;
+    background: #ccc;
+    color: #a1a1a1;
+} */
+
 .modal {
     position: fixed;
     display: none;
