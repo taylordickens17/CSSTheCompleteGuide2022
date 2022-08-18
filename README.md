@@ -21,7 +21,7 @@ Udemy Course: [CSS - The Complete Guide 2022 (incl. Flexbox, Grid, & Sass)](http
 - [x] Section 9: Working with JavaScript & CSS
 - [x] Section 10: Making our Website Responsive
 - [x] Section 11: Adding & Styling
-- [] Section 12: Working with Text and Fonts
+- [x] Section 12: Working with Text and Fonts
 - [] Section 13: Adding Flexbox to our Project
 - [] Section 14: Using the CSS Grid
 - [] Section 15: Transforming Elements with CSS Transforms
