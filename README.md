@@ -4,7 +4,7 @@ Udemy Course: [CSS - The Complete Guide 2022 (incl. Flexbox, Grid, & Sass)](http
 
 :round_pushpin: Start Date: 8/4/2022
 
-:white_check_mark: End Date: TBD
+:white_check_mark: End Date: 8/26/2022
 
 ### Course Instructors: Maximilian Schwarzmüller and Manuel Lorenz
 
